@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { Layout, CheckCircle, Calculator, Info } from 'lucide-react';
+import { Layout, CheckCircle, Calculator, Info, Table } from 'lucide-react';
 
 export interface Task {
     id: string;
@@ -44,5 +44,12 @@ export const tasks: Task[] = [
         description: 'A basic task management app.',
         icon: CheckCircle,
         component: lazy(() => import('./CompoundComponentArch')),
+    },
+    {
+        id: 'infiniteScroll',
+        name: 'Infinite Scroll Task',
+        description: 'A basic task management app.',
+        icon: Table,
+        component: lazy(() => import('./infiniteScroll')),
     },
 ];
